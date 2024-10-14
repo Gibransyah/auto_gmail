@@ -1,0 +1,38 @@
+===== [ HOW TO SETUP ] =====
+1. Download python here: https://www.python.org/downloads/.
+2. Open cmd and write this: pip install requests selenium cryptography fake-useragent
+3. Install the webdriver you want to use here:
+   Chrome: https://mega.nz/file/J0pknAjY#RUt9O7jXbPhGjEffP4s-ArdVVif3srAQfPbxmNTW9_M
+   Edge: https://mega.nz/file/xxACCaCA#DsTTsuK9SORL9kIGPvkFYtQCzWOUhssC5CqT2seGMEM
+   Mozilla Firefox: https://mega.nz/file/clQHGaKY#TaqL6W5u8HED11FPNknl8jntpHV7YMBlgSQ054Vn9Sc
+
+
+===== [ CONFIG ] =====
+otp_provider: "5SIM, TOKOCLAUDE, TOKOCLAUDEUNL, TURBOOTP, TURBOOTPUNL, SIOTP, SIOTPUNL"
+  --> Note: UNL is a code to buy products that have the description "UNLIMITED" (Product price is more expensive than regular product).
+
+api_key: "API_KEY"
+  --> It's usually found on the account profile.
+
+phone_number_country: "2" 
+  --> If you are using 5SIM: https://5sim.net/docs#countries-list (Input the country name)
+  --> If you are using SIOTP: https://siotp.com/page/api_doc#api-5 (Input the ID)
+
+phone_number_operator: "any"
+  --> If you are using 5SIM: https://5sim.net/docs#operators-list
+  --> If you are using SIOTP: https://siotp.com/page/api_doc#api-5
+
+proxies: [
+  "" --> Leave blank if you do not want to use proxy.
+  "IP:PORT:USERNAME:PASSWORD" --> Fill in this format if you want to use a proxy.
+]
+  --> Note: Proxy can only be used on chrome.
+
+recovery_email: "YOUR_EMAIL@gmail.com" --> Leave blank if you do not want to use recovery email.
+webdriver: "RANDOM, CHROME, EDGE, FIREFOX"
+discord_url: "DISCORD_WEBHOOK_URL"
+max_thread: 2 --> Total webdrivers opened.
+max_accounts_created_per_thread: 1 --> Total accounts created per webdriver opened.
+fake_useragent_mode: true or false
+headless_mode: true or false
+number_empty_cooldown: 3600 --> Cooldown in seconds.
